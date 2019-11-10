@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const expressHandleBars = require("express-handlebars");
 const todoRoutes = require("./routes/todos");
 
-const connectUrl = 'mongodb+srv://valdis:123@cluster0-mwesw.mongodb.net/todos';
+const connectUrl = "mongodb+srv://valdis:123@cluster0-kabre.mongodb.net/todos";
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 const app = express();
 const hbs = expressHandleBars.create({
@@ -16,6 +16,8 @@ const hbs = expressHandleBars.create({
 app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 app.set('views', 'views');
+
+app.use(todoRoutes);
 
 const start = async () => {
     try {

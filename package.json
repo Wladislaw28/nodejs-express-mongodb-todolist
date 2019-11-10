@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-express-mongodb-todolist",
+  "version": "1.0.0",
+  "description": "To run the completed project in this folder, you need the following:",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.7.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
